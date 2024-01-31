@@ -2,6 +2,8 @@
 
 This is a Telegram bot for the [Zhytlobud-2](https://www.zhilstroj-2.ua/) Construction Company. The bot provides information about the company's projects, answers user questions, and assists with user needs.
 
+You can start using the bot by clicking [here](https://t.me/Zhilstroj2_bot).
+
 ## Features
 
 - Multilingual support: The bot supports multiple languages and allows users to set their preferred language.
