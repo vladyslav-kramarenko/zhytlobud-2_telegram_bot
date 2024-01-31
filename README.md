@@ -1,6 +1,6 @@
 # Zhytlobud-2 Construction Company Bot
 
-This is a Telegram bot for the Zhytlobud-2 Construction Company. The bot provides information about the company's projects, answers user questions, and assists with user needs.
+This is a Telegram bot for the [Zhytlobud-2](https://www.zhilstroj-2.ua/) Construction Company. The bot provides information about the company's projects, answers user questions, and assists with user needs.
 
 ## Features
 
