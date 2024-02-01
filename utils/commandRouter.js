@@ -1,9 +1,7 @@
 const handleLanguageCommand = require('../commands/languageCommand');
-const handleComplexCommand = require('../commands/complexHandler');
+const handleProjectCommand = require('../commands/projectHandler');
 
 function routeCommand(command, msg, match, bot, userLanguages, messages) {
-
-    console.log(command);
 
     const parts = command.split('_');
 
@@ -17,10 +15,10 @@ function routeCommand(command, msg, match, bot, userLanguages, messages) {
             bot.sendMessage(chatId, messages['start'][userLang], {parseMode: 'Markdown'});
             break;
         case 'language':
-            handleLanguageCommand(parts, chatId, bot, userLang,userLanguages, messages);
+            handleLanguageCommand(command,parts, chatId, bot, userLang,userLanguages, messages);
             break;
-        case 'complex':
-            handleComplexCommand(parts, chatId, bot, userLang, messages);
+        case 'projects':
+            handleProjectCommand(command,parts, chatId, bot, userLang, messages);
             break;
         default:
             if (messages[command]) {

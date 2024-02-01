@@ -1,11 +1,10 @@
-// utils/complexes.js
 require('dotenv').config();
 
-const complexes = {
+const projects = {
     'desire': {
-        'section_a1': process.env.DESIRE_SECTION_A1_URL,
-        'section_a2': process.env.DESIRE_SECTION_A2_URL,
-        'section_a3': process.env.DESIRE_SECTION_A3_URL,
+        'section_A1': process.env.DESIRE_SECTION_A1_URL,
+        'section_A2': process.env.DESIRE_SECTION_A2_URL,
+        'section_A3': process.env.DESIRE_SECTION_A3_URL,
         // ...
     },
     // 'complex2': {
@@ -16,4 +15,4 @@ const complexes = {
     // ...
 };
 
-module.exports = complexes;
+module.exports = projects;
