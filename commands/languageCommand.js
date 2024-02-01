@@ -1,4 +1,4 @@
-function handleLanguageCommand(parts, chatId, bot, userLang,userLanguages, messages) {
+function handleLanguageCommand(command,parts, chatId, bot, userLang,userLanguages, messages) {
 
     if (parts.length === 1) {
         // Handle the /language command
@@ -16,6 +16,8 @@ function handleLanguageCommand(parts, chatId, bot, userLang,userLanguages, messa
         }
         userLanguages[chatId] = language;
         bot.sendMessage(chatId, `Language changed to ${messages['language_name'][language]}`, {parseMode: 'Markdown'});
+    }else{
+        bot.sendMessage(chatId, messages["noCommand"][userLang]+`: /${command}`, {parseMode: 'Markdown'});
     }
 }
 
